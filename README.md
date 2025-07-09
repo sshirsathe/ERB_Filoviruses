@@ -15,7 +15,9 @@ Bulk RNA Seq processing, abundance quantification and count matrix generation ar
 This project is organized into directories:
 
 *Preprocessing_and_Quantification - containing .sh scripts used to complete steps 1 and 2
+
 *Local_Scripts - containing .py and .R files used to complete steps 3-5
+
 *Figures - scripts used in figure generation
 
 ## References
