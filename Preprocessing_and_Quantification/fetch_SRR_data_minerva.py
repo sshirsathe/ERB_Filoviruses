@@ -1,7 +1,9 @@
 import subprocess 
 import os
 import fnmatch
-#ml python/3.10.4 kallisto, sratoolkit, and delete all the previous output folders (everything in output, the SRR... folders im the current directory
+ml python/3.10.4 
+ml kallisto
+ml sratoolkit
 
 #example sample set
 #****************************
