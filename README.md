@@ -9,7 +9,7 @@ This project contains scripts used to perform the following workflow:
 5. Perform differential expression analysis between groupings
 6. Generate figures such as heatmaps volcano plots
 
-Bulk RNA Seq processing, abundance quantification and count matrix generation are performed in a Minerva high performance computing cluster while normalization and procesures following are performed locally in python and R.
+Bulk RNA Seq processing, abundance quantification and count matrix generation are performed in a Minerva high performance computing cluster while normalization and procedures following are performed locally in python and R.
 
 ### Directory Structure
 This project is organized into directories:
