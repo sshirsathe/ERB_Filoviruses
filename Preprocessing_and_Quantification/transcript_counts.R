@@ -1,3 +1,7 @@
+#Acknowledgements:
+#This code uses combinations of ideas, techniques and code snippets
+#from: Juan Angel Patiño-Galindo
+
 library(dplyr) # data wrangling
 library(ggplot2) # plotting
 library(DESeq2) # rna-seq
