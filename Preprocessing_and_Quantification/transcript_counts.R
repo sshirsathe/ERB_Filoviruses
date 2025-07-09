@@ -13,8 +13,7 @@ library(rhdf5) # read/convert kalisto output files.
 dir <- system.file("extdata", package = "tximportData")
 #dir
 
-#                                                           ****************************
-samples <- read.csv("/sc/arion/projects/BAT-NATIVE/SRR_Data/Schneor_2023_metadata.csv", header=TRUE,stringsAsFactors=F,row.names=1)
+samples <- read.csv("/sc/arion/projects/BAT-NATIVE/SRR_Data/Lee_2015_Metadata.csv", header=TRUE,stringsAsFactors=F,row.names=1)
 samples
 
 setwd("/sc/arion/projects/BAT-NATIVE/SRR_Data")
@@ -23,9 +22,17 @@ names(files) <- samples$Run
 files
 
 tx2gene <- read.csv("/sc/arion/projects/BAT-NATIVE/SRR_Data/tx2gene.csv")
-#                                                         *****************
+
 
 txi.kallisto.tsv <- tximport(files, type = "kallisto", tx2gene = tx2gene, ignoreAfterBar = TRUE)
+
+idx <- rownames(txi.kallisto.tsv$counts) %in% tx2gene[,1]
+txi.sub <- txi.kallisto.tsv
+for (mat in c("abundance","counts","length")) {
+  txi.sub[[mat]] <- txi.kallisto.tsv[[mat]][idx,]
+}
+txi.sub
+
 
 df <- data.frame(
   gene_counts = txi.kallisto.tsv$counts
@@ -40,5 +47,4 @@ df2
 
 colnames(df) <- df2$sub...._.........basename.files..
 
-#                                                           *                            *******************************************************
-write.csv(df,"/sc/arion/projects/BAT-NATIVE/SRR_Data/Final_Gene_Counts_Tables_All_Papers/Schneor_2023_gene_counts_collapsed_IFNW_FINAL_ALL_60.csv", row.names=TRUE)
+write.csv(df, "/sc/arion/projects/BAT-NATIVE/SRR_Data/Lee_2015_combined_fastqs.csv", row.names=TRUE)
