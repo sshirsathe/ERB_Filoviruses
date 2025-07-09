@@ -12,13 +12,13 @@ This directory contains scripts used to perform the following workflow related t
 Bulk RNA Seq processing, abundance quantification and count matrix generation are performed in a Minerva high performance computing cluster while normalization and procedures following are performed locally in python and R.
 
 ### Directory Structure
-This project is organized into directories:
+This project is organized into the following directories:
 
-**Preprocessing_and_Quantification** containing .sh scripts used to complete steps 1 and 2
+**Preprocessing_and_Quantification** : contains .sh scripts used to complete steps 1 and 2
 
-**Local_Scripts** containing .py and .R files used to complete steps 3-5
+**Local_Scripts** : contains .py and .R files used to complete steps 3-5
 
-**Figures** containing scripts used in figure generation
+**Figures** : contains scripts used in figure generation
 
 Note: The reference transcriptome utilized for transcript mapping is a modified version of Raegyp2.0 containing 5 IFNW genes representative of the original 20. This collapsing procedure is performed in Preprocessing_and_Quantification/collapse_IFNW.py
 
