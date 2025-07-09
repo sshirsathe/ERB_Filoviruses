@@ -1,7 +1,7 @@
-# ERB Filoviruses Bioinformatics Methods
+# Species-specific antiviral programs drive immunity to Marburg virus in Egyptian rousette bats and humans
 
 ## Overview
-This project contains scripts used to perform the following workflow:
+This directory contains scripts used to perform the following workflow related to this work:
 1. Process Bulk RNA Seq NCBI samples given by SRR number
 2. Quantify abundances of genes of interest and generate a count matrix
 3. Normalize and scale the count matrix
