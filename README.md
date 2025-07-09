@@ -11,6 +11,12 @@ This project contains scripts used to perform the following workflow:
 
 Bulk RNA Seq processing, abundance quantification and count matrix generation are performed in a Minerva high performance computing cluster while normalization and procesures following are performed locally in python and R.
 
+### Directory Structure
+This project is organized into directories:
+  Preprocessing_and_Quantification - containing .sh scripts used to complete steps 1 and 2
+  Local_Scripts - containing .py and .R files used to complete steps 3-5
+  Figures - scripts used in figure generation
+
 ## References
 *Kovatch P, Gai L, Cho HM, Fluder E, Jiang D. Optimizing High-Performance Computing Systems for Biomedical Workloads. IEEE Int Symp Parallel Distrib Process Workshops Phd Forum. 2020 May;2020:183-192. doi: 10.1109/ipdpsw50202.2020.00040. Epub 2020 Jul 28. PMID: 33088611; PMCID: PMC7575271*
 
