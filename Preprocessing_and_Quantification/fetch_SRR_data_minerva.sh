@@ -9,20 +9,21 @@ ml sratoolkit
 #****************************
 sra_numbers = ["ERR6510455", "ERR6510456", "ERR6510457", "ERR6510458", "ERR6510459", "ERR6510460", "ERR6510463", "ERR6510464", "ERR6510471", "ERR6510472", "ERR6510473", "ERR6510474", "ERR6510475", "ERR6510476", "ERR6510477", "ERR6510478", "ERR6510479", "ERR6510481", "ERR6510480", "ERR6510482", "ERR6510483", "ERR6510484", "ERR6510485", "ERR6510486", "ERR6510487", "ERR6510488", "ERR6510489", "ERR6510490", "ERR6510491", "ERR6510492"]
 
-# this will download the .sra files to ~/ncbi/public/sra/ (will create directory if not present)
+# download the .sra files to ~/ncbi/public/sra/ (will create directory if not present)
 for sra_id in sra_numbers:
     print ("Currently downloading: " + sra_id)
     prefetch = "prefetch " + sra_id
     print ("The command used was: " + prefetch)
     subprocess.call(prefetch, shell=True)
 
-# this will extract the .sra files from above into a folder named 'fastq'
+# extract the .sra files from above into a folder named 'fastq'
 for sra_id in sra_numbers:
     print ("Generating fastq for: " + sra_id)
     fastq_dump = f'fasterq-dump --outdir fastq/Lee_fastq_data/{sra_id} --progress {sra_id}'
     print ("The command used was: " + fastq_dump)
     subprocess.call(fastq_dump, shell=True)
-'''
+
+#loop through each sra sample and run kallisto to quanitfy abundances for each
 for sra_num in sra_numbers:
     change_name = f'mv /sc/arion/projects/BAT-NATIVE/SRR_Data/outputs/abundance.tsv /sc/arion/projects/BAT-NATIVE/SRR_Data/outputs/{sra_num}_abundance.tsv'
     # folder path
