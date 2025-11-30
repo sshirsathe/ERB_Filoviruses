@@ -1,5 +1,5 @@
 # Species-specific antiviral programs drive immunity to Marburg virus in Egyptian rousette bats and humans
-Pastor, AF1; Shirsathe, S.1; Somavarapu, R1; Vidal, S.1; Ferressini-Gerpe, N.M1; Schneor, L.2; Friedman, S.2, Barrall, E1, Siu, T1,3; Giannetti, E.1; Tagliavia, M.1; Patiño, J.1; Heng, P1.; Guito, J4.;  Garcia-Sastre, A. 1, 5; Kuhn, J. 6; Rosenberg, B. 1, M; Towner J.4,7;, Kepler8, T; Johnson, J. R1; Hagai, T.2, Sanchez-Lockhart9, Palacios, G1, 5.
+Pastor, AF<sup>1</sup>; Shirsathe, S.1; Somavarapu, R1; Vidal, S.1; Ferressini-Gerpe, N.M1; Schneor, L.2; Friedman, S.2, Barrall, E1, Siu, T1,3; Giannetti, E.1; Tagliavia, M.1; Patiño, J.1; Heng, P1.; Guito, J4.;  Garcia-Sastre, A. 1, 5; Kuhn, J. 6; Rosenberg, B. 1, M; Towner J.4,7;, Kepler8, T; Johnson, J. R1; Hagai, T.2, Sanchez-Lockhart9, Palacios, G1, 5.
 ## Overview
 This directory contains scripts used to perform the bioinformatic methods described in this work:
 1. Process Bulk RNA Seq NCBI samples given by SRR number and map to reference transcriptome
