@@ -7,7 +7,7 @@ This directory contains scripts used to perform the bioinformatic methods descri
 3. Normalize and scale the count matrix
 4. Extract orthologous genes between samples for downstream comparative analysis
 5. Perform differential expression analysis between groupings
-6. Generate figures such as heatmaps volcano plots
+6. Generate gene expression heatmaps volcano plots
 
 Bulk RNA Seq processing, abundance quantification and count matrix generation are performed in a Minerva high performance computing cluster while normalization and procedures following are performed locally in python and R.
 
