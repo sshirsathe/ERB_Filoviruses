@@ -1,5 +1,5 @@
 # Species-specific antiviral programs drive immunity to Marburg virus in Egyptian rousette bats and humans
-Pastor, AF<sup>1</sup>; Shirsathe, S.1; Somavarapu, R1; Vidal, S.1; Ferressini-Gerpe, N.M1; Schneor, L.2; Friedman, S.2, Barrall, E1, Siu, T1,3; Giannetti, E.1; Tagliavia, M.1; Patiño, J.1; Heng, P1.; Guito, J4.;  Garcia-Sastre, A. 1, 5; Kuhn, J. 6; Rosenberg, B. 1, M; Towner J.4,7;, Kepler8, T; Johnson, J. R1; Hagai, T.2, Sanchez-Lockhart9, Palacios, G1, 5.
+Pastor, AF<sup>1</sup>; Shirsathe, S.<sup>1</sup>; Somavarapu, R<sup>1</sup>; Vidal, S.<sup>1</sup>; Ferressini-Gerpe, N.M<sup>1</sup>; Schneor, L.<sup>2</sup>; Friedman, S.<sup>2</sup>, Barrall, E<sup>1</sup>, Siu, T<sup>1,3</sup>; Giannetti, E.<sup>1</sup>; Tagliavia, M.<sup>1</sup>; Patiño, J.<sup>1</sup>; Heng, P<sup>1</sup>.; Guito, J<sup>4</sup>.;  Garcia-Sastre, A.<sup>1,5</sup>; Kuhn, J. <sup>6</sup>; Rosenberg, B. <sup>1</sup>, M; Towner J.<sup>4,7</sup>;, Kepler<sup>8</sup>, T; Johnson, J. R<sup>1</sup>; Hagai, T.<sup>2</sup>, Sanchez-Lockhart<sup>9</sup>, Palacios, G<sup>1, 5</sup>.
 ## Overview
 This directory contains scripts used to perform the bioinformatic methods described in this work:
 1. Process Bulk RNA Seq NCBI samples given by SRR number and map to reference transcriptome
